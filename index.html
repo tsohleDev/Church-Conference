@@ -4,86 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="images/x-icon" href="/images/favicon.svg">
+    <script src="https://kit.fontawesome.com/6b90bc6a59.js" crossorigin="anonymous"></script>
     <title>Church Conference</title>
 </head>
 <body>
     <header>
-        <button>
-            <i class="fa fa-bars closed__menu" style="color:black;"></i>
-        </button>
+        
     </header>
 
     <main>
         <section id="hello">
-            <Article>
-                <h1>2023 United Churches Conference</h1>
-                <h4>Hello We Are Sharing the word of God</h4>
+            <button id="menu">
+                <i class="fa-solid fa-bars menu__icon"></i>
+            </button>
+
+            <Article class="hello">
+                <h4>"Hello We Are Sharing the word of God"</h4>
+                <h1>United Churches Conference 2023</h1>
 
                 <p>A joyful celebration united in the word of God, believing in openess and Sharing
                     creating a positive change with people from over 80 countries is taking place this July in South Africa
                 </p>
 
-                <h3>2023.09.17(Sunday)~22(Friday)</h3>
+                <h3>2023.09.17 (Sunday)~22(Friday)</h3>
                 <h5>@Protea Hotel, National Museum of South Africa, and more</h5>
             </Article>
         </section>
 
         <section id="schedule">
-            <h2>Main Program</h2>
+            <h2 class="schedule__title">Main Program</h2>
+            <hr>
 
             <ul class="progam__schedule">
-                <li>
-                    <i></i>
+                <li class="schedule__li">
+                    <img src="./images/Sermon.svg" alt="">
                     <h4>Sermon</h4>
                     <p>listen to pastors from various countries as thry deliver a powerfull and life changing sermon</p>
                 </li>
 
-                <li>
-                    <i></i>
-                    <h4>Sermon</h4>
-                    <p>listen to pastors from various countries as thry deliver a powerfull and life changing sermon</p>
+                <li class="schedule__li">
+                    <img src="./images/worship.svg" alt="">
+                    <h4>Praise <br> 
+                          and  <br>
+                        Worship</h4>
+                    <p>Appriciate music from the best gospel stars in the world as they deliver praise and worship</p>
                 </li>
 
-                <li>
-                    <i></i>
-                    <h4>Sermon</h4>
-                    <p>listen to pastors from various countries as thry deliver a powerfull and life changing sermon</p>
+                <li class="schedule__li">
+                    <img src="./images/prayer.svg" alt="">
+                    <h4>Prayers</h4>
+                    <p>Have a chance to share subjects you need prayers on.</p>
                 </li>
 
-                <li>
-                    <i></i>
-                    <h4>Sermon</h4>
-                    <p>listen to pastors from various countries as thry deliver a powerfull and life changing sermon</p>
+                <li class="schedule__li">
+                    <img src="./images/testemonial.svg" alt="">
+                    <h4>Testimonials</h4>
+                    <p>listen and share testemonials on how great is our Lord</p>
                 </li>
             </ul>
+
+            <button>
+                Join UC Conference
+            </button>
         </section>
 
         <section id="Pastors__Artists">
-            <h2>Featured Pastors and artists</h2>
+            <h2>Featured Evangelist</h2>
+            <hr>
         </section>
 
         <section id="partners">
             <h2>Partners</h2>
+            <hr>
             <nav class="partners__links">
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
-                <a href=""><i></i></a>
+                <a class="mozilla partners__link" href="">Mozilla</a>
+                <a class="google partners__link" href="">Go<span id="o">o</span>g<span id="l">l</span>e</a>
+                <a class="navar partners__link" href="">NAVAR</a>
+                <a class="daumkakao partners__link" href="">daumkakao</a>
+                <a class="airbnb partners__link" href=""><i class="fa-brands fa-airbnb"></i>airbnb</a>
             </nav>
         </section>
     </main>
 
     <footer>
-        <img src="" alt="">
+        <img src="./images//church-logo.svg" alt="">
         <article>
-            <h4>2023 United Churches Conference, Rights Reserved</h4>
+            <h3>2023 United Churches Conference, Rights Reserved</h3>
             <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
                 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
                 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT</p>
         </article>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

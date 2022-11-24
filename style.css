@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lato&display=swap');
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+section {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    padding: 0;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h3, h4 {
+    font-family: 'Dela Gothic One', cursive;
+}
+
+h1, h4 {
+    color: #ec5242;
+}
+
+hr {
+    width: 12vw;
+    margin-top: 0;
+    padding: 0;
+    border: 1px solid #ec5242;
+}
+
+#hello {
+    background-image: url('./images/background-ii.png');
+}
+
+.hello {
+    margin: 5vh 5vw;
+}
+
+h1 {
+    font-size: 6vh;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 3vh 0 2vh 0;
+}
+
+h4 {
+    font-size: 3vh;
+    padding: 0;
+    margin: 0;
+}
+
+h5 {
+    font-size: 3vh;
+    margin: 2vh 0 0 0;
+    font-weight: 400;
+    color: #666262;
+    font-family: 'Lato', sans-serif;
+}
+
+.hello h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 1;
+    color: #ec5242;
+}
+
+.hello p {
+    background-color: #d3d3d399;
+    font-size: 3vh;
+    line-height: 5vh;
+    padding: 1vh 1vw;
+    margin: 3vh 0;
+    color: #666262;
+    border: 1px solid #fff;
+}
+
+.hello h3 {
+    font-size: 4vh;
+    font-weight: 1;
+    color: #666262;
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    width: 10vw;
+    height: 10vh;
+    background-color: transparent;
+    border: 0;
+    margin: 0 0 0 5vw;
+    color: #666262;
+}
+
+.menu__icon {
+    font-size: 8vw;
+}
+
+#Pastors__Artists {
+    background-color: #fff;
+}
+
+#schedule {
+    background: linear-gradient(45deg, #1e1e22 0%, #1e1e22 5%,transparent 5%, transparent 10%, #1e1e22 10%, #1e1e22 15%,transparent 15%,transparent 20%, #1e1e22 20%, #1e1e22 25%,transparent 25%,transparent 30%, #1e1e22 30%, #1e1e22 35%,transparent 35%,transparent 40%, #1e1e22 40%, #1e1e22 45%,transparent 45%,transparent 50%, #1e1e22 50%, #1e1e22 55%,transparent 55%,transparent 60%, #1e1e22 60%, #1e1e22 65%,transparent 65%,transparent 70%, #1e1e22 70%, #1e1e22 75%,transparent 70%,transparent 80%, #1e1e22 80%, #1e1e22 85%,transparent 85%,transparent 90%, #1e1e22 90%, #1e1e22 95%,transparent 95%), linear-gradient(135deg, #1e1e22 0%, #1e1e22 5%,transparent 5%, transparent 10%, #1e1e22 10%, #1e1e22 15%,transparent 15%,transparent 20%, #1e1e22 20%, #1e1e22 25%,transparent 25%,transparent 30%, #1e1e22 30%, #1e1e22 35%,transparent 35%,transparent 40%, #1e1e22 40%, #1e1e22 45%,transparent 45%,transparent 50%, #1e1e22 50%, #1e1e22 55%,transparent 55%,transparent 60%, #1e1e22 60%, #1e1e22 65%,transparent 65%,transparent 70%, #1e1e22 70%, #1e1e22 75%,transparent 70%,transparent 80%, #1e1e22 80%, #1e1e22 85%,transparent 85%,transparent 90%, #1e1e22 90%, #1e1e22 95%,transparent 95%);
+    background-size: 6em 6em;
+    background-color: #272424;
+    opacity: 1;
+    align-items: center;
+}
+
+.schedule__title {
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-weight: 1;
+}
+
+.schedule__li {
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    margin: 3vh;
+    align-items: center;
+}
+
+.schedule__li img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 10vw;
+    height: 70%;
+    margin: 2vh 0;
+    justify-self: center;
+}
+
+.schedule__li h4 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center;
+    text-align: center;
+    font-weight: 1;
+    font-size: 3vw;
+}
+
+.schedule__li p {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    font-size: 3vh;
+    line-height: 4vh;
+    color: #fff;
+}
+
+#schedule button {
+    background-color: #ec5242;
+    height: 10vh;
+    width: 45vw;
+    font-size: 3.3vw;
+    font-weight: 1;
+    font-family: 'Dela Gothic One', cursive;
+    color: #fff;
+    border: 0;
+    margin: 0 0 5vh 0;
+}
+
+.progam__schedule li {
+    list-style-type: none;
+    background-color: #342d2d;
+    opacity: 0.7;
+}
+
+.speaker__li {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.speaker__image__section {
+    display: grid;
+    grid-template-columns: repeat(6, 15%);
+    grid-template-rows: repeat(6, 15%);
+}
+
+.speaker__image {
+    grid-row: 2/4;
+    grid-column: 2/5;
+    width: 20vw;
+    z-index: 1;
+}
+
+.speaker__image__deco {
+    grid-row: 1/3;
+    grid-column: 1/3;
+    width: 15vw;
+}
+
+.speaker__article{
+    grid-row: 1/2;
+    grid-column: 2;
+}
+
+.speaker__name {
+    font-weight: 1;
+    opacity: 0.75;
+    margin: 1vh 0;
+}
+
+.speaker__profession {
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh;
+    margin: 0;
+}
+
+.speaker__hr {
+    width: 5vw;
+    margin: 2vh 0;
+    border: 1px solid #b2b2b2
+}
+
+#partners {
+    background-color: #272424;
+}
+
+#partners h2 {
+    color: #fff;
+}
+
+#partners hr {
+    width: 8vw;
+}
+
+#partners nav {
+    margin: 0 0 4vh 0;
+    display: grid;
+    grid-template-columns: repeat(2, 15%) 5% repeat(2, 15%) 2% repeat(2, 15%);
+    align-items: baseline;
+}
+
+.partners__link {
+    font-size: 5vh;
+    color: #fff;
+    margin: 0 0 3vh 0;
+    padding: 0;
+    text-align: center;
+    opacity: 0.4;
+    text-decoration: none;
+}
+
+.mozilla {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    opacity: 0.8;
+}
+
+.google {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    color: #a4a1a1;
+    opacity: 1;
+}
+
+#o {
+    color: #fff;
+    opacity: 0.9;
+}
+
+#l {
+    color: aliceblue;
+}
+
+.navar {
+    grid-column: 7/9;
+    grid-row: 1/2;
+    font-size: 7vh;
+    font-weight: 1000;
+}
+
+.daumkakao {
+    grid-column: 2/5;
+    grid-row: 2/3;
+}
+
+.airbnb {
+    grid-column: 5/8;
+    grid-row: 2/3;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vh 0;
+}
+
+footer img {
+    width: 50vw;
+    height: 10vh;
+    margin: 0 2.5vw 0 5vw;
+}
+
+footer article h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3vh;
+    line-height: 4vh;
+    font-weight: 100;
+    margin: 0 5vw 0 2.5vw;
+    opacity: 0.7;
+}
+
+footer article p {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    
+}
