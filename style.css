@@ -7,7 +7,6 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
 }
 
 section {
@@ -54,8 +53,10 @@ h1 {
 }
 
 h2 {
+    font-size: 5vh;
     text-align: center;
     margin: 3vh 0 2vh 0;
+    opacity: 0.9;
 }
 
 h4 {
@@ -78,7 +79,7 @@ h5 {
     color: #ec5242;
 }
 
-.hello p {
+#hello__p {
     background-color: #d3d3d399;
     font-size: 3vh;
     line-height: 5vh;
