@@ -84,7 +84,12 @@ hr {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 9vw;
+  font-weight: 800;
+  line-height: 9vw;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, red, rgb(99, 78, 78), #ec5252);
   padding: 0;
   margin: 0;
 }
@@ -473,11 +478,7 @@ footer {
 
   #hello article h1 {
     font-size: 8vw;
-    font-weight: 800;
     line-height: 7vw;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, red, rgb(99, 78, 78), #ec5252);
   }
 
   #hello article h3 {
