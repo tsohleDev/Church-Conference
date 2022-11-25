@@ -1,3 +1,4 @@
+//Load the featured spakers dynamicall
 const speakersSection = document.querySelector('#Pastors__Artists')
 
 const speakers = [{
@@ -54,6 +55,7 @@ const loadSpeakers = number => {
     for (let i=0; i<number; i++){
         let li = document.createElement('li')
         li.classList.add('speaker__li')
+        li.classList.add(`speaker__li${i}`)
 
         let article = document.createElement('article')
         let div = document.createElement('div')
@@ -74,3 +76,4 @@ const loadSpeakers = number => {
 }
 
 loadSpeakers(6)
+  

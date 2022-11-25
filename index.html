@@ -11,18 +11,40 @@
 </head>
 <body>
     <header>
-        
+        <button id="cross">
+            <i class="fa-solid fa-xmark menu__icon"></i>
+        </button>
+
+        <nav id="nav__socials">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="">English</a>
+            <a href="">My Page</a>
+            <a href="">Logout</a>
+        </nav>
+        <nav id="nav__menu">
+            <a id="nav__desktop" href="index.html"><img src="images/church-logo.svg" alt=""></a>
+            <a id="nav__mobile" href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="">Program</a>
+            <a href="">Join</a>
+            <a href="">Sponser</a>
+            <a href="">News</a>
+            <p>UN Conference</p>
+        </nav>
     </header>
 
     <main>
         <section id="hello">
-            <button id="menu">
+            <button id="hamburger">
                 <i class="fa-solid fa-bars menu__icon"></i>
             </button>
 
             <Article class="hello">
                 <h4>"Hello We Are Sharing the word of God"</h4>
-                <h1>United Churches Conference 2023</h1>
+                <h1>United Churches <br>
+                     Conference <br>
+                      2023</h1>
 
                 <p id="hello__p">A joyful celebration united in the word of God, believing in openess and Sharing
                     creating a positive change with people from over 80 countries is taking place this July in South Africa
@@ -41,7 +63,7 @@
                 <li class="schedule__li">
                     <img src="./images/Sermon.svg" alt="">
                     <h4>Sermon</h4>
-                    <p>listen to pastors from various countries as thry deliver a powerfull and life changing sermon</p>
+                    <p>listen to pastors from various countries as they deliver a powerfull and life changing sermon</p>
                 </li>
 
                 <li class="schedule__li">
@@ -65,6 +87,8 @@
                 </li>
             </ul>
 
+            <a href="">SEE THE WHOLE PROGRAM</a>
+            
             <button>
                 Join UC Conference
             </button>
@@ -99,5 +123,6 @@
     </footer>
 
     <script src="./script.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>

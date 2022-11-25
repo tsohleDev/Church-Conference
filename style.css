@@ -1,6 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lato&display=swap');
 
+header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #a4a1a1ef;
+    z-index: 2;
+}
+
+#nav__desktop,
+#nav__socials,
+header nav p {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a {
+    color: #ec5242;
+    font-size: 5vw;
+    font-family: 'Dela Gothic One', cursive;
+    text-decoration: none;
+    margin: 5vh 0 0 0;
+}
+
+header nav a:hover {
+    color: #1e1e22;
+    opacity: 0.3;
+    font-size: 6vw;
+}
+
 body {
+    font-family: 'Lato', sans-serif;
     margin: 0;
 }
 
@@ -23,7 +60,7 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h3, h4 {
+h3, h4 {
     font-family: 'Dela Gothic One', cursive;
 }
 
@@ -40,6 +77,8 @@ hr {
 
 #hello {
     background-image: url('./images/background-ii.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
 }
 
 .hello {
@@ -47,26 +86,26 @@ hr {
 }
 
 h1 {
-    font-size: 6vh;
+    font-size: 6vw;
     padding: 0;
     margin: 0;
 }
 
 h2 {
-    font-size: 5vh;
+    font-size: 3vw;
     text-align: center;
     margin: 3vh 0 2vh 0;
     opacity: 0.9;
 }
 
 h4 {
-    font-size: 3vh;
+    font-size: 3vw;
     padding: 0;
     margin: 0;
 }
 
 h5 {
-    font-size: 3vh;
+    font-size: 3vw;
     margin: 2vh 0 0 0;
     font-weight: 400;
     color: #666262;
@@ -81,8 +120,8 @@ h5 {
 
 #hello__p {
     background-color: #d3d3d399;
-    font-size: 3vh;
-    line-height: 5vh;
+    font-size: 3vw;
+    line-height: 5vw;
     padding: 1vh 1vw;
     margin: 3vh 0;
     color: #666262;
@@ -90,14 +129,15 @@ h5 {
 }
 
 .hello h3 {
-    font-size: 4vh;
+    font-size: 4vw;
     font-weight: 1;
     color: #666262;
     padding: 0;
     margin: 0;
 }
 
-#menu {
+#hamburger,
+#cross {
     width: 10vw;
     height: 10vh;
     background-color: transparent;
@@ -106,12 +146,20 @@ h5 {
     color: #666262;
 }
 
+#hamburger:hover,
+#cross:hover {
+    color: #ec5242;
+    width: 11vw;
+    height: 11vh;
+}
+
 .menu__icon {
     font-size: 8vw;
 }
 
 #Pastors__Artists {
     background-color: #fff;
+    margin: 0 5vw;
 }
 
 #schedule {
@@ -156,9 +204,13 @@ h5 {
 .schedule__li p {
     grid-column: 3/4;
     grid-row: 1/2;
-    font-size: 3vh;
-    line-height: 4vh;
+    font-size: 3vw;
+    line-height: 4vw;
     color: #fff;
+}
+
+#schedule a {
+    display: none;
 }
 
 #schedule button {
@@ -171,6 +223,11 @@ h5 {
     color: #fff;
     border: 0;
     margin: 0 0 5vh 0;
+}
+
+#schedule button:hover {
+    color: #ec5242;
+    background-color: #fffc;
 }
 
 .progam__schedule li {
@@ -216,7 +273,7 @@ h5 {
 
 .speaker__profession {
     font-family: 'Lato', sans-serif;
-    font-size: 2vh;
+    font-size: 2vw;
     margin: 0;
 }
 
@@ -246,13 +303,18 @@ h5 {
 }
 
 .partners__link {
-    font-size: 5vh;
+    font-size: 5vw;
     color: #fff;
     margin: 0 0 3vh 0;
     padding: 0;
     text-align: center;
     opacity: 0.4;
     text-decoration: none;
+}
+
+.partners__link:hover {
+    text-decoration: underline;
+    font-size: 5.5vw;
 }
 
 .mozilla {
@@ -280,8 +342,12 @@ h5 {
 .navar {
     grid-column: 7/9;
     grid-row: 1/2;
-    font-size: 7vh;
+    font-size: 7vw;
     font-weight: 1000;
+}
+
+.navar:hover {
+    font-size: 7.5vw;
 }
 
 .daumkakao {
@@ -309,8 +375,8 @@ footer img {
 
 footer article h3 {
     font-family: 'Lato', sans-serif;
-    font-size: 3vh;
-    line-height: 4vh;
+    font-size: 3vw;
+    line-height: 4vw;
     font-weight: 100;
     margin: 0 5vw 0 2.5vw;
     opacity: 0.7;
@@ -319,6 +385,247 @@ footer article h3 {
 footer article p {
     display: none;
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
+    header {
+        position: inherit;
+        display: block;
+        background-color: rgb(251, 251, 251);
+        width: 100%;
+        height: 100%;
+        height: 15vh;
+    }
+
+    #nav__desktop {
+        display: block;
+    }
+
+    #nav__mobile {
+        display: none;
+    }
+
+    #nav__desktop img {
+        height: 6vh;
+        margin: 0 15vw 0 0;
+    }
+
+    #hamburger,
+    #cross {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 15% 0 0;
+        height: 10vh;
+    }
+
+    header nav p {
+        display: block;
+        font-size: 2vw;
+        line-height: 3vw;
+        font-weight: 900;
+        color:#ec5242 ;
+        margin: 0 0 0 3vw;
+        padding: 0 1vw;
+        border: 5px solid #ec5242;
+    }
+
+    header nav a {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.3vw;
+        color: #1e1e22;
+        margin: 0 1vw;
+    }
+
+    header nav a:hover {
+        font-size: 1.6vw;
+        opacity: 1;
+        font-weight: 800;
+        color: #ec5242;
+    }
+
+    #nav__socials {
+        display: flex;
+        background-color:#342d2d;
+        justify-content: flex-end;
+        height: 5vh;
+    }
+
+    #nav__socials a {
+        color: #fff;
+    }
+
+    #nav__socials a:hover {
+        color: #ec5242;
+        opacity: 0.8;
+    }
     
+    #hello {
+        padding: 5vh 10vw;
+        background-size: 100% 100%;
+    }
+
+    #hello article h1 {
+        font-size: 8vw;
+        font-weight: 800;
+        font-stretch: 2vw;
+        line-height: 7vw;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, red , rgb(99, 78, 78), #ec5252);
+    }
+
+    #hello article h3 {
+        font-size: 2.5vw;
+        line-height: 4vw;
+        margin: 2vh 0;
+    }
+
+    #hello article h5 {
+        font-size: 2vw;
+        line-height: 3vw;
+        margin: 2vh 0;
+    }
+
+    #hello__p {
+        width: 100%;
+        font-size: 1.8vw;
+        line-height: 3vw;
+    }
+
+    .progam__schedule {
+        display: flex;
+        justify-content: center;
+    }
+
+    .schedule__li {
+        display: grid;
+        grid-template-rows: 35% 20% 45%;
+        grid-template-columns: 100%;
+        width: 20%;
+        height: 50vh;
+        margin: 3vh 0.2vw;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .schedule__li img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        justify-self: center;
+    }
+    
+    .schedule__li h4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        justify-self: center;
+        text-align: center;
+        font-weight: 1;
+        line-height: 2vw;
+        font-size: 2vw;
+    }
+    
+    .schedule__li p {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 1.5vw;
+        line-height: 2vw;
+        padding: 0 2vw;
+        color: #fff;
+    }
+    
+    #schedule button {
+        display: none;
+    }
+
+    #schedule a {
+        color: #fff;
+        font-size: 2vw;
+        margin: 5vh 0 10vh 0;
+    }
+
+    #schedule a:hover {
+        color: #ec5242;
+        font-size: 2.2vw;
+    }
+
+    .featured__speakers {
+        display: grid;
+        grid-column-gap: 2vw;
+    }
+
+    .speaker__li0 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .speaker__li1 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .speaker__li2 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .speaker__li3 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .speaker__li4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .speaker__li5 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .speaker__image,
+    .speaker__image__deco {
+        width: 10vw;
+    }
+
+    .speaker__profession {
+        font-size: 1.5vw;
+    }
+
+    .speaker__work {
+        font-size: 1.2vw;
+        line-height: 2vw;
+    }
+
+    #partners nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    #partners nav a {
+        font-size: 2.5vw;
+        margin: 4vw 2vw;
+    }
+
+    footer article h3 {
+        font-size: 1vw;
+        line-height: 4vw;
+        margin: 0;
+        opacity: 1;
+    }
+    
+    footer article p {
+        display: block;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        margin: 0 5vw 0 0;
+        opacity: 0.7;
+    }
 }

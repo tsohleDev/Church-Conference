@@ -12,17 +12,43 @@
 </head>
 <body>
     <main>
+        <header>
+            <button id="cross">
+                <i class="fa-solid fa-xmark menu__icon"></i>
+            </button>
+    
+            <nav id="nav__socials">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="">English</a>
+                <a href="">My Page</a>
+                <a href="">Logout</a>
+            </nav>
+            <nav id="nav__menu">
+                <a id="nav__desktop" href="index.html"><img src="images/church-logo.svg" alt=""></a>
+                <a id="nav__mobile" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="">Program</a>
+                <a href="">Join</a>
+                <a href="">Sponser</a>
+                <a href="">News</a>
+                <p>UN Conference</p>
+            </nav>
+        </header>
+        
         <section id="hello" class="about__hello">
-            <button id="menu">
+            <button id="hamburger">
                 <i class="fa-solid fa-bars menu__icon"></i>
             </button>
 
             <Article class="hello">
                 <h4>"Hello We Are Sharing the word of God"</h4>
                 <h1>United Churches Conference 2023</h1>
-
+                <hr>
                 <p id="hello__p">The united churches conference brings together the community of religious leaders, pastors, evangalists, singers who comprise the Christian community in different countries.
                     This year, we hope to expand our invitation list including organizations and individuals.
+                    <span>who want to work with us on shared projects that advance the cause of the commons, free rfeligion and open knowledge, so if youre active and engaged 
+                        in the world of open content -free speach, right to religious acts, kingdom preachings. we hope you'll join us this year to rejoice in the lord. </span>
                 </p>
 
                 <p id="hello_p">please contact us for Email for any furthur questions about the UN</p>
@@ -44,8 +70,12 @@
             <hr>
 
             <p>Take a look at the last two UN Conferences which took place in Buenos Aires and in Warsaw</p>
-            <img src="./images/2011.svg" alt="2011 UN Conference at New York">
-            <img src="./images/2016.svg" alt="2016 Un Conference at Sau paulo">
+            
+            <div>
+                <img src="./images/2011.svg" alt="2011 UN Conference at New York">
+                <img src="./images/2016.svg" alt="2016 Un Conference at Sau paulo">
+            </div>
+            
         </section>
 
         <section id="partners">
@@ -70,5 +100,7 @@
                 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT</p>
         </article>
     </footer>
+
+    <script src="./menu.js"></script>
 </body>
 </html>
