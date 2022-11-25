@@ -1,0 +1,112 @@
+.about__hello h4,
+.about__hello h1,
+.about__hello p,
+.about__hello h5 {
+  text-align: center;
+}
+
+#hello_p {
+  margin: 2vh 10%;
+  font-size: 3vh;
+  opacity: 0.7;
+}
+
+#hello p span {
+  display: none;
+}
+
+#hello__h5 {
+  font-family: 'Dela Gothic One', cursive;
+  text-decoration: underline;
+  font-weight: 10;
+  color: black;
+  opacity: 0.7;
+}
+
+#hello__p {
+  background-color: #fffd;
+}
+
+#logo {
+  padding: 0 10vw;
+  margin: 0 0 10vh 0;
+}
+
+#logo p {
+  text-align: center;
+  opacity: 0.7;
+}
+
+#logo img {
+  width: 70%;
+  align-self: center;
+  padding: 2vh 10vw;
+  margin: 5vh 0 0 0;
+  border: 3px solid #0002;
+}
+
+#past__conferences {
+  padding: 0 10vw;
+  margin: 0 0 10vh 0;
+}
+
+#past__conferences p {
+  text-align: center;
+  align-self: center;
+  opacity: 0.7;
+}
+
+#past__conferences div {
+  align-items: center;
+  text-align: center;
+}
+
+#past__conferences div img {
+  align-self: center;
+  width: 80%;
+  margin: 3vh 0;
+}
+
+@media screen and (min-width: 768px) {
+  #hello p span {
+    display: block;
+  }
+
+  #hello article h1 {
+    color: #ec5252;
+    font-size: 6vw;
+    margin: 0 0 2vh 0;
+    opacity: 1;
+  }
+
+  #hello article h4 {
+    display: none;
+  }
+
+  #hello article hr {
+    margin-bottom: 5vh;
+  }
+
+  #hello__p {
+    line-height: 2vw;
+  }
+
+  #hello_p {
+    font-size: 1.5vw;
+  }
+
+  #hello article h5 {
+    font-size: 1.5vw;
+  }
+
+  #past__conferences div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #past__conferences div img {
+    justify-self: flex-start;
+    width: 40vw;
+    margin: 0 2vw 0 0;
+  }
+}
