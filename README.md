@@ -3,6 +3,7 @@
 # Church Conference
 
 > A website to promote and provide details about a church conference event.
+[About Church Conference](https://www.loom.com/share/92951cfefb2b475da6246dbce13b6687)
 
 
 ## Built With

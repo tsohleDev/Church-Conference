@@ -34,11 +34,14 @@ const speakers = [{
 }];
 
 const loadSpeakers = (number) => {
+  let i = 0
+  
   const insertTag = (type, src, innerHTML, clas, article, li, div) => {
     const tag = document.createElement(type);
     tag.classList.add(clas);
     if (type === 'img') {
       tag.src = src;
+      tag.alt = speakers[i].name
       div.appendChild(tag);
     } else {
       if (type !== 'hr') {
@@ -52,7 +55,7 @@ const loadSpeakers = (number) => {
   const ul = document.createElement('ul');
   ul.classList.add('featured__speakers');
 
-  for (let i = 0; i < number; i += 1) {
+  for (i; i < number; i += 1) {
     const li = document.createElement('li');
     li.classList.add('speaker__li');
     li.classList.add(`speaker__li${i}`);
